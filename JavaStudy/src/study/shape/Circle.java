@@ -39,4 +39,16 @@ public class Circle {
 		this.setCenterX(x);
 		this.setCenterY(y);
 	}
+	public void printCircle() {
+		System.out.println("원의 정보");
+		System.out.println("중심좌표 : "
+				+ centerX + "," + centerY);
+		System.out.println("반지름 : "+ radius);
+	}
+	public void moveCenter(int x, int y) {
+		this.setCenter(x, y);
+	}
+	public void resize(int r) {
+		this.setRadius(r);
+	}
 }
